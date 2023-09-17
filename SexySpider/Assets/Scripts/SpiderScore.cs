@@ -45,7 +45,7 @@ public class SpiderScore : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             CheckMovement("Down");
-            animator.SetTrigger("ButtWiggle");
+            animator.SetTrigger("SassyLegs");
         }
 
     }
