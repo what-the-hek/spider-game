@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     List<string> instructions;
     int randomNumber;
     string stringToRetrieve;
-    float instructionTimer = 2.0f;
+    float instructionTimer = 3.0f;
     int currentInstructions = 0;
     int maxInstructions = 10;
 
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
                 randomNumber = Random.Range(0, 4);
                 stringToRetrieve = instructions[randomNumber].ToString();
                 randomInstruction.text = stringToRetrieve;
-                instructionTimer = 2.0f;
+                instructionTimer = 3.0f;
                 currentInstructions++;
             }
         }

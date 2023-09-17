@@ -604,7 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d2855baa21054da0a2ad7dca2b3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreManager: {fileID: 0}
+  scoreManager: {fileID: 2044515497}
   randomInstruction: {fileID: 72692568}
   scoreTracker: {fileID: 2091929019}
 --- !u!1 &963194225

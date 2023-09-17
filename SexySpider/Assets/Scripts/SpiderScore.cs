@@ -27,25 +27,25 @@ public class SpiderScore : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             CheckMovement("Left");
-            animator.SetTrigger("ButtWiggle");
+            animator.SetTrigger("LeftMove");
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             CheckMovement("Right");
-            animator.SetTrigger("ButtWiggle");
+            animator.SetTrigger("RightMove");
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             CheckMovement("Up");
-            MoveSideways(-1);
+            animator.SetTrigger("ButtWiggle");
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             CheckMovement("Down");
-            MoveSideways(1);
+            animator.SetTrigger("ButtWiggle");
         }
 
     }
