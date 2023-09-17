@@ -7,6 +7,14 @@ public class StartMenu : MonoBehaviour
 {
     public string sceneName = "";
 
+    void Update()
+    {
+        if(Input.anyKey)
+        {
+            LoadScene();
+        }
+    }
+
     public void LoadScene()
     {
         SceneManager.LoadScene(sceneName);
