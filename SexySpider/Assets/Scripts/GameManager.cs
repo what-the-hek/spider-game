@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     List<string> instructions;
     int randomNumber;
     string stringToRetrieve;
-    float instructionTimer = 1.0f;
+    float instructionTimer = 1.5f;
     int currentInstructions = 0;
     int maxInstructions = 10;
     int previousInstructionIndex = 0;
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
                 previousInstructionIndex = randomNumber;
                 stringToRetrieve = instructions[randomNumber].ToString();
                 randomInstruction.text = stringToRetrieve;
-                instructionTimer = 1.0f;
+                instructionTimer = 1.5f;
                 currentInstructions++;
             }
         }
@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator RestartGame()
     {
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(7.0f);
 
         SceneManager.LoadScene("StartScene");
     }
