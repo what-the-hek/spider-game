@@ -12,6 +12,7 @@ public class SpiderScore : MonoBehaviour
     Rigidbody spider;
     public TextMeshProUGUI instructionText;
     Animator animator;
+    //public TextMeshProUGUI scoreTracker;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +64,7 @@ public class SpiderScore : MonoBehaviour
     {
         if (selectedDirection == instructionText.text)
         {
+            //scoreTracker.text = "Yes";
             score++;
             Debug.Log(score);
         }
