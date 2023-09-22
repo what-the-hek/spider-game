@@ -66,13 +66,13 @@ public class SpiderScore : MonoBehaviour
     {
         if (selectedDirection == instructionText.text)
         {
-            scoreFeedback.text = "Yes!";
+        //    scoreFeedback.text = "Yes!";
             score++;
             Debug.Log(score);
         }
         else
         {
-            scoreFeedback.text = "oof!";
+        //    scoreFeedback.text = "oof!";
         }
     }
 }
